@@ -16,7 +16,7 @@ async function authKsefToken(
             body: JSON.stringify({
             challenge: challenge.challenge, // dokładnie to, co zwrócił /auth/challenge
             contextIdentifier: {
-        type: "nip",
+        type: "Nip",
         value: KSEF_NIP,
         },
       encryptedToken,
@@ -30,12 +30,7 @@ async function authKsefToken(
   const data = await res.json();
 
   // w zależności od wersji API pole bywa różnie nazwane
-  const authToken =
-    data.authenticationToken?.token ||
-    data.authenticationToken ||
-    data.accessToken ||
-    data.token;
-  
+  const authToken =data.authenticationToken.token
   const referenceNumber= data.referenceNumber;
 
   if (!authToken) {

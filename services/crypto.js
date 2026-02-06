@@ -3,6 +3,10 @@ import "dotenv/config";
 
 const cryptoToken = (challenge, ksefCertPem) => {
   const raw = process.env.KSEF_TOKEN;
+
+  if (!challenge?.timestampMs) throw new Error("Brak challenge.timestampMs");
+  if (!challenge?.challenge) throw new Error("Brak challenge.challenge");
+
   if (!raw) throw new Error("Brak KSEF_TOKEN w .env");
   if (!challenge?.timestamp) throw new Error("Brak challenge.timestamp");
 
@@ -11,7 +15,7 @@ const cryptoToken = (challenge, ksefCertPem) => {
     throw new Error("KSEF_TOKEN ma niewidoczne/niepoprawne znaki (np. CRLF/BOM/spacje). Wklej token ponownie.");
   }
 
-  const ts = String(challenge.timestamp);
+  const ts = String(challenge.timestampMs); // <- TO
   const payload = Buffer.from(`${token}|${ts}`, "utf8");
 
   const publicKey = crypto.createPublicKey(ksefCertPem);

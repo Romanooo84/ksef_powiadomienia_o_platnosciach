@@ -21,9 +21,10 @@ async function redeemAuthenticationToken(authenticationToken) {
   const data = await res.json();
 
   return {
-    accessToken: data.accessToken,
-    refreshToken: data.refreshToken,
-    expiresIn: data.expiresIn,
+    accessToken: data.accessToken.token,
+    accessTokenExpiresIn: data.accessToken.validUntil,
+    refreshToken: data.refreshToken.token,
+    refreshTokenExpiresIn: data.refreshToken.validUntil,
   };
 }
 export default redeemAuthenticationToken;
