@@ -7,7 +7,6 @@ async function getAuthStatus(authenticationToken, referenceNumber) {
 
   console.log("Sprawdzanie statusu autoryzacji KSeF...");
   const url = `${KSEF_ACCESS_URL}/auth/${referenceNumber}`;
-  console.log("GET", url);
   const res = await fetch(url, {
     method: "GET",
     headers: {

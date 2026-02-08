@@ -1,118 +1,76 @@
-import getChallenge from './services/challenge.js';
-import getPublicKey from './services/getpulbickey.js';
-import cryptoToken from './services/crypto.js';
-import authKsefToken from './services/authToken.js';
-import getAuthStatus from './services/authStatus.js';
-import redeemAuthenticationToken from './services/accesToken.js';
-import fs from "node:fs/promises";
+import auth from './services/auth.js';
+import downloadInvoiceMetadata from './operations/downloadInvoiceMetadata.js';
+import downloadInvoiceXml from './operations/downloadXMLInvoice.js';
+import refreshKsefToken from './services/auth/refershToken.js';
+import cron from 'node-cron'
 import "dotenv/config";
-let accessTokenData;
 
-const KSEF_URL = process.env.KSEF_URL;
-const KSEF_AUTH_URL = process.env.KSEF_AUTH_URL;
+let accessTokenKsef;
+let refreshTokenKsef;
 
-const challengeResponse = await getChallenge();
-console.log("Otrzymano challenge KSeF");
-console.log("challenge:", challengeResponse);
-
-const key = await getPublicKey();
-console.log("Pobrano klucz publiczny KSeF.")
-
-const token= cryptoToken(challengeResponse,key);
-console.log("Wygenerowano zaszyfrowany token KSeF: ");
-
-const dataToken = await authKsefToken(challengeResponse, token);
-
-const { authToken, referenceNumber } = dataToken;
-
-/*console.log("Uzyskano token autoryzacyjny KSeF: " + authToken);
-console.log("ReferenceNumber: " + referenceNumber);*/
-console.log("wygotowano token autoryzacyjny KSeF.");
-console.log("ref:", referenceNumber);
-console.log("authToken looks like JWT:", authToken.split(".").length === 3);
-
-let authStatus;
-while (true) {
-  authStatus = await getAuthStatus(authToken, referenceNumber);
-
-  const code = authStatus?.status?.code;
-
-  if (code != 100) {
-    break; // sukces – wychodzimy z pętli
-  }
-
-  // czekamy 100 ms
-  await new Promise(resolve => setTimeout(resolve, 1000));
+const accessTokenData = async () => {
+  const { accessToken, refreshToken } = await auth();
+  accessTokenKsef = accessToken;
+  refreshTokenKsef = refreshToken;
 }
-
-console.log("Autoryzacja zakończona:");
-const status = authStatus?.status?.code;
-if (status === 200) {
-  accessTokenData = await redeemAuthenticationToken(authToken)
-  console.log("Uzyskano token dostępu KSeF.");
+const main = async () => {
+  await accessTokenData();
 
 
-const accessToken = accessTokenData.accessToken;
-const refreshToken = accessTokenData.refreshToken;
+  const path = "/invoices/query/metadata";
+  const options = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      subjectType: "subject2",
+      dateRange: {
+        dateType: "issue",
+        from: "2026-02-01T00:00:00Z",
+        to:   "2026-02-06T17:59:59Z",
+      },
+    }),
+  };
+  cron.schedule('*/1 * * * *', async () => {
+    
+    try {
+      console.log('pobieram metadane faktur KSeF...');
+      const startData = await downloadInvoiceMetadata(
+        accessTokenKsef,
+        path,
+        options
+      );
 
-console.log('pobieram metadane faktur KSeF...');
+      if (startData === 401 || startData === 403) {
+        console.log("Token wygasł, odświeżam...");
+       accessTokenKsef = await refreshKsefToken(refreshTokenKsef);
+       console.log(accessTokenKsef);
+       startData = await downloadInvoiceMetadata(
+        accessTokenKsef,
+        path,
+        options
+      );
+  
+      }
+      
+      console.log("Pobieranie metadanych faktur KSeF zakończone.");
 
-const path = "/invoices/query/metadata";
+      if (startData!=null & (startData != 401 & startData != 403)) {
+          const invoiceNumbers = startData.invoices.map(
+            invoice => invoice.ksefNumber
+        );
+        console.log(`Znaleziono ${invoiceNumbers.length} faktur.`);
+        console.log(`Pobieranie XML faktur...`);
 
-async function ksefFetch(path, options = {}) {
-console.log("BODY =", options?.body);
-  const res = await fetch(`${KSEF_AUTH_URL}${path}`, {
-    ...options,
-    headers: {
-      Accept: "application/json",
-      Authorization: `Bearer ${accessToken}`,
-      ...(options.headers || {}),
-    },
-  });
+        for (const ksefNumber of invoiceNumbers) {
+          const xml = await downloadInvoiceXml(ksefNumber, accessTokenKsef);
+         }
 
-  if (!res.ok) throw new Error(`HTTP ${res.status}: ${await res.text()}`);
-  return res;
-}
-
-const startRes = await ksefFetch("/invoices/query/metadata", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    subjectType: "subject2",   // nabywca
-    dateRange: {
-      dateType: "issue",
-      from: "2026-02-05T00:00:00Z",
-      to:   "2026-02-06T10:59:59Z"
+         console.log("Pobieranie XML faktur zakończone.");
+        } 
+      } catch (error) {
+        return
+      } 
     }
-  }),
-});
-
-/*const startData = await startRes.json();
-for (const invoice of startData.invoices) {
-console.log(invoice);
-}*/
-
-async function downloadInvoiceXml(ksefNumber, accessToken) {
-  const url = `${KSEF_AUTH_URL}/invoices/ksef/${encodeURIComponent(ksefNumber)}`;
-
-  const res = await fetch(url, {
-    method: "GET",
-    headers: {
-      Accept: "application/xml",
-      Authorization: `Bearer ${accessToken}`,
-    },
-  });
-
-  if (!res.ok) throw new Error(`HTTP ${res.status}: ${await res.text()}`);
-
-  const xml = await res.text();
-  await fs.writeFile(`invoice-${ksefNumber}.xml`, xml, "utf8");
-  return xml;
-}
-
-// użycie:
-const xml = await downloadInvoiceXml("5260215088-20260205-4D0040E5A28E-BE", accessToken);
-}
-else {
-  console.log("Autoryzacja nie powiodła się.");
-}
+  )
+};
+main();
