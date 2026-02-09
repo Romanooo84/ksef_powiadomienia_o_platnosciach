@@ -1,0 +1,110 @@
+<Faktura xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2022/01/05/eD/DefinicjeTypy/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+<Naglowek>
+<KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+<WariantFormularza>3</WariantFormularza>
+<DataWytworzeniaFa>2026-02-01T05:07:10.805902-06:00</DataWytworzeniaFa>
+</Naglowek>
+<Podmiot1>
+<PrefiksPodatnika>PL</PrefiksPodatnika>
+<DaneIdentyfikacyjne>
+<NIP>2090000825</NIP>
+<Nazwa>U.S. BANK EUROPE DAC (SP. Z O.O. O WYZNACZONYM PRZEDMIOCIE DZIALALNOSCI) ODDZIAL W POLSCE</Nazwa>
+</DaneIdentyfikacyjne>
+<Adres>
+<KodKraju>PL</KodKraju>
+<AdresL1>UL PULAWSKA 17 02-515 WARSZAWA</AdresL1>
+</Adres>
+<AdresKoresp>
+<KodKraju>PL</KodKraju>
+<AdresL1>Elavon Merchant Services UL PULAWSKA 17 02-515 WARSZAWA</AdresL1>
+</AdresKoresp>
+</Podmiot1>
+<Podmiot2>
+<DaneIdentyfikacyjne>
+<NIP>1181646171</NIP>
+<Nazwa>MD MARZENA PISARSKA</Nazwa>
+</DaneIdentyfikacyjne>
+<Adres>
+<KodKraju>PL</KodKraju>
+<AdresL1>UL. WOJCIECHA BOGUSLAWSKIEGO 10 LOK. 16  01-923 WARSZAWA</AdresL1>
+</Adres>
+<AdresKoresp>
+<KodKraju>PL</KodKraju>
+<AdresL1>CARREFOUR EXPRESS C17  WRZECIONO 41  01-950 WARSZAWA</AdresL1>
+</AdresKoresp>
+<NrKlienta>2100579149</NrKlienta>
+<JST>2</JST>
+<GV>2</GV>
+</Podmiot2>
+<Fa>
+<KodWaluty>PLN</KodWaluty>
+<P_1>2026-02-01</P_1>
+<P_2>2026014610000678</P_2>
+<OkresFa>
+<P_6_Od>2026-01-01</P_6_Od>
+<P_6_Do>2026-01-31</P_6_Do>
+</OkresFa>
+<P_13_1>80.00</P_13_1>
+<P_14_1>18.40</P_14_1>
+<P_13_7>864.78</P_13_7>
+<P_15>963.18</P_15>
+<Adnotacje>
+<P_16>2</P_16>
+<P_17>2</P_17>
+<P_18>2</P_18>
+<P_18A>2</P_18A>
+<Zwolnienie>
+<P_19>1</P_19>
+<P_19A>art. 43 ust.</P_19A>
+</Zwolnienie>
+<NoweSrodkiTransportu>
+<P_22N>1</P_22N>
+</NoweSrodkiTransportu>
+<P_23>2</P_23>
+<PMarzy>
+<P_PMarzyN>1</P_PMarzyN>
+</PMarzy>
+</Adnotacje>
+<RodzajFaktury>VAT</RodzajFaktury>
+<DodatkowyOpis>
+<Klucz>Warunki płatności</Klucz>
+<Wartosc>Jeśli kwota ta nie została jeszcze uregulowana poprzez rozliczenie netto - powinna zostać przelana na konto U.S. Bank Europe DAC, z uwzględnieniem numeru akceptanta oraz numeru identyfikacyjnego KSEF, w terminie określonym w</Wartosc>
+</DodatkowyOpis>
+<DodatkowyOpis>
+<Klucz>Warunki płatności c.d.</Klucz>
+<Wartosc> umowie, a jeśli nie został określony - w ciągu 14 dni od otrzymania faktury.</Wartosc>
+</DodatkowyOpis>
+<FaWiersz>
+<NrWierszaFa>1</NrWierszaFa>
+<P_7>INGENICO LANE 3000/3600 PIN PAD</P_7>
+<P_8A>szt.</P_8A>
+<P_8B>2</P_8B>
+<P_9A>40.00</P_9A>
+<P_11>80.00</P_11>
+<P_11Vat>18.40</P_11Vat>
+<P_12>23</P_12>
+<KursWaluty>1</KursWaluty>
+</FaWiersz>
+<FaWiersz>
+<NrWierszaFa>2</NrWierszaFa>
+<P_7>Prowizja za usługi akceptacji i rozliczenia transakcji dokonanych za pomocą kart płatniczych w punkcie</P_7>
+<P_8A>rata</P_8A>
+<P_8B>1</P_8B>
+<P_9A>864.78</P_9A>
+<P_11>864.78</P_11>
+<P_11Vat>0.00</P_11Vat>
+<P_12>zw</P_12>
+<KursWaluty>1</KursWaluty>
+</FaWiersz>
+</Fa>
+<Stopka>
+<Informacje>
+<StopkaFaktury>U.S. Bank Europe Designated Activity Company (Spólka z Ograniczona Odpowiedzialnoscia o Wyznaczonym Przedmiocie Dzialalnosci) Oddzial w Polsce, z siedziba w Warszawie, ul. Pulawska 17, 02515 Warszawa, zarejestrowany w KRS prowadzonym przez Sad Rejonowy dla M.St Warszawy w Warszawie, XIII Wydzial Gospodarczy -@Krajowego Rejestru Sadowego pod numerem KRS 0000287836, REGON 300649197, NIP 2090000825, kapital zakladowy U.S. Bank Europe Designated Activity Company: 6.400.001,00 euro, kapital docelowy U.S. Bank Europe Designated Activity Company: 1.000.000.000,00 euro. Elavon Merchant Services jest nazwa handlowa U.S. Bank Europe DAC Współpracujemy z firmą windykacyjną Intrum Sp. z o.o.</StopkaFaktury>
+</Informacje>
+<Rejestry>
+<PelnaNazwa>U.S. Bank Europe Designated Activity Company (Spólka z Ograniczona Odpowiedzialnoscia o Wyznaczonym Przedmiocie Dzialalnosci) Oddzial w Polsce</PelnaNazwa>
+<KRS>0000287836</KRS>
+<REGON>300649197</REGON>
+</Rejestry>
+</Stopka>
+</Faktura>

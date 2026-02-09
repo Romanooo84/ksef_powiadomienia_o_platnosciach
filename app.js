@@ -8,11 +8,17 @@ import "dotenv/config";
 
 let accessTokenKsef;
 let refreshTokenKsef;
+let referenceNumberKsef;
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 const accessTokenData = async () => {
-  const { accessToken, refreshToken } = await auth();
+  const { accessToken, refreshToken, referenceNumber } = await auth();
   accessTokenKsef = accessToken;
   refreshTokenKsef = refreshToken;
+  referenceNumberKsef = referenceNumber;
 }
 const main = async () => {
   await accessTokenData();
@@ -26,11 +32,12 @@ const main = async () => {
       subjectType: "subject2",
       dateRange: {
         dateType: "issue",
-        from: "2026-02-01T00:00:00Z",
-        to:   "2026-02-01T23:59:59Z",
+        from: "2026-02-02T00:00:00Z",
+        to:   "2026-02-04T23:59:59Z",
       },
     }),
   };
+
   cron.schedule('*/1 * * * *', async () => {
     
     try {
@@ -41,8 +48,7 @@ const main = async () => {
         options
       );
 
-      console.log(startData);
-
+      console.log(startData)
       if (startData === 401 || startData === 403) {
           console.log("Token wygasł, odświeżam...");
         accessTokenKsef = await refreshKsefToken(refreshTokenKsef);
@@ -63,18 +69,32 @@ const main = async () => {
         console.log(`Pobieranie XML faktur...`);
 
         for (const ksefNumber of invoiceNumbers) {
-          await downloadInvoiceXml(ksefNumber, accessTokenKsef);
-         }
+          let downloadResult
+
+          while (true) {
+            downloadResult = await downloadInvoiceXml(ksefNumber, accessTokenKsef);
+
+            if (downloadResult === 429) {
+              console.log("⏸ KSeF 429 – czekam 5 minut...");
+              await sleep(5 * 60 * 1000);
+              continue; // spróbuj jeszcze raz TEN SAM numer
+            }
+
+            break; // sukces albo inny błąd
+          }
+        } 
 
          await readFileXml();
 
          console.log("Pobieranie XML faktur zakończone.");
-        } 
+       
+      }
       } catch (error) {
         console.error("Błąd podczas pobierania metadanych faktur KSeF:", error);
         return
       } 
     }
-  )
+    
+  );  
 };
 main();

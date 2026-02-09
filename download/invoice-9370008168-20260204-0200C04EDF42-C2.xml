@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/" xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2022/01/05/eD/DefinicjeTypy/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Naglowek>
+    <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+    <WariantFormularza>3</WariantFormularza>
+    <DataWytworzeniaFa>2026-02-04T10:42:29.207Z</DataWytworzeniaFa>
+    <SystemInfo>System Franko</SystemInfo>
+  </Naglowek>
+  <Podmiot1>
+    <DaneIdentyfikacyjne>
+      <NIP>9370008168</NIP>
+      <Nazwa>"CARREFOUR POLSKA" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>ul. Targowa 72</AdresL1>
+      <AdresL2>03-734 Warszawa</AdresL2>
+      <GLN>5900000930015</GLN>
+    </Adres>
+  </Podmiot1>
+  <Podmiot2>
+    <DaneIdentyfikacyjne>
+      <NIP>1181646171</NIP>
+      <Nazwa>MD MARZENA PISARSKA</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>UL.   BOGUSŁAWSKIEGO  10 lok. 16</AdresL1>
+      <AdresL2>01-923 WARSZAWA</AdresL2>
+    </Adres>
+    <NrKlienta>13354</NrKlienta>
+    <IDNabywcy>13354</IDNabywcy>
+    <JST>2</JST>
+    <GV>2</GV>
+  </Podmiot2>
+  <Podmiot3>
+    <IDNabywcy>C17</IDNabywcy>
+    <DaneIdentyfikacyjne>
+      <BrakID>1</BrakID>
+      <Nazwa>C17</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>Wrzeciono 41</AdresL1>
+      <AdresL2>01-950 Warszawa</AdresL2>
+    </Adres>
+    <Rola>2</Rola>
+  </Podmiot3>
+  <Fa>
+    <KodWaluty>PLN</KodWaluty>
+    <P_1>2026-02-03</P_1>
+    <P_2>FRT-26-K-0158038</P_2>
+    <WZ>4440/2000101/2026</WZ>
+    <P_6>2026-01-31</P_6>
+    <P_13_1>-693.70</P_13_1>
+    <P_14_1>-159.55</P_14_1>
+    <P_13_2>0.00</P_13_2>
+    <P_14_2>0.00</P_14_2>
+    <P_13_3>0.00</P_13_3>
+    <P_14_3>0.00</P_14_3>
+    <P_13_6_1>0.00</P_13_6_1>
+    <P_13_7>0.00</P_13_7>
+    <P_15>-853.25</P_15>
+    <Adnotacje>
+      <P_16>2</P_16>
+      <P_17>2</P_17>
+      <P_18>2</P_18>
+      <P_18A>2</P_18A>
+      <Zwolnienie>
+        <P_19N>1</P_19N>
+      </Zwolnienie>
+      <NoweSrodkiTransportu>
+        <P_22N>1</P_22N>
+      </NoweSrodkiTransportu>
+      <P_23>2</P_23>
+      <PMarzy>
+        <P_PMarzyN>1</P_PMarzyN>
+      </PMarzy>
+    </Adnotacje>
+    <RodzajFaktury>KOR</RodzajFaktury>
+    <PrzyczynaKorekty>Pomyłka w ilości towaru</PrzyczynaKorekty>
+    <TypKorekty>1</TypKorekty>
+    <DaneFaKorygowanej>
+      <DataWystFaKorygowanej>2026-02-01</DataWystFaKorygowanej>
+      <NrFaKorygowanej>FRT-26-F-2601887</NrFaKorygowanej>
+      <NrKSeF>1</NrKSeF>
+      <NrKSeFFaKorygowanej>9370008168-20260201-0400C0928848-2A</NrKSeFFaKorygowanej>
+    </DaneFaKorygowanej>
+    <FaWiersz>
+      <NrWierszaFa>1</NrWierszaFa>
+      <UU_ID>14531</UU_ID>
+      <P_7>PAP BAT VOGUE SKY SSL</P_7>
+      <Indeks>K00001</Indeks>
+      <P_8A>szt</P_8A>
+      <P_8B>10.0000</P_8B>
+      <P_9A>18.01</P_9A>
+      <P_11>180.10</P_11>
+      <P_11Vat>41.42</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+      <StanPrzed>1</StanPrzed>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>1</NrWierszaFa>
+      <UU_ID>14531</UU_ID>
+      <P_7>PAP BAT VOGUE SKY SSL</P_7>
+      <Indeks>1532403</Indeks>
+      <GTIN>59011422</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>0.0000</P_8B>
+      <P_9A>18.01</P_9A>
+      <P_11>0.00</P_11>
+      <P_11Vat>0.00</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>2</NrWierszaFa>
+      <UU_ID>14537</UU_ID>
+      <P_7>PAP JTI WINSTON BLUE SL (B17)</P_7>
+      <Indeks>K00001</Indeks>
+      <P_8A>szt</P_8A>
+      <P_8B>30.0000</P_8B>
+      <P_9A>17.12</P_9A>
+      <P_11>513.60</P_11>
+      <P_11Vat>118.13</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+      <StanPrzed>1</StanPrzed>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>2</NrWierszaFa>
+      <UU_ID>14537</UU_ID>
+      <P_7>PAP JTI WINSTON BLUE SL (B17)</P_7>
+      <Indeks>1257302</Indeks>
+      <GTIN>59072461</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>0.0000</P_8B>
+      <P_9A>17.12</P_9A>
+      <P_11>0.00</P_11>
+      <P_11Vat>0.00</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+    </FaWiersz>
+    <Rozliczenie>
+      <DoRozliczenia>853.25</DoRozliczenia>
+    </Rozliczenie>
+    <Platnosc>
+      <TerminPlatnosci>
+        <Termin>2026-02-24</Termin>
+      </TerminPlatnosci>
+      <FormaPlatnosci>6</FormaPlatnosci>
+      <RachunekBankowy>
+        <NrRB>39103015080000000501700827</NrRB>
+      </RachunekBankowy>
+    </Platnosc>
+  </Fa>
+  <Stopka>
+    <Rejestry>
+      <PelnaNazwa>"CARREFOUR POLSKA" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</PelnaNazwa>
+      <KRS>0000020710</KRS>
+      <REGON>070569406</REGON>
+      <BDO>000009699</BDO>
+    </Rejestry>
+  </Stopka>
+</Faktura>

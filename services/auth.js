@@ -55,7 +55,7 @@ if (status === 200) {
   refreshToken = accessTokenData.refreshToken;
 }
 
-return { accessToken, refreshToken };
+return { accessToken, refreshToken, referenceNumber };
 }
 
 export default auth;

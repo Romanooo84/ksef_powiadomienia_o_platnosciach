@@ -1,9 +1,11 @@
 import "dotenv/config";
 
 const KSEF_AUTH_URL = process.env.KSEF_AUTH_URL;
+const pageSize = 100;
+let offset = 0;
 
 async function downloadInvoiceMetadata(accessToken,path, options = {}) {
-  const res = await fetch(`${KSEF_AUTH_URL}${path}`, {
+  const res = await fetch(`${KSEF_AUTH_URL}${path}?pageSize=${pageSize}&pageOffset=${offset}`, {
     ...options,
     headers: {
       Accept: "application/json",

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/" xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2022/01/05/eD/DefinicjeTypy/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Naglowek>
+    <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+    <WariantFormularza>3</WariantFormularza>
+    <DataWytworzeniaFa>2026-02-04T20:15:22+00:00</DataWytworzeniaFa>
+    <SystemInfo>OPL2KSeF</SystemInfo>
+  </Naglowek>
+  <Podmiot1>
+    <DaneIdentyfikacyjne>
+      <NIP>5260250995</NIP>
+      <Nazwa>Orange Polska S.A.</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>Al. Jerozolimskie 160</AdresL1>
+      <AdresL2>02-326 Warszawa</AdresL2>
+    </Adres>
+  </Podmiot1>
+  <Podmiot2>
+    <DaneIdentyfikacyjne>
+      <NIP>1181646171</NIP>
+      <Nazwa>MD MARZENA PISARSKA</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>UL. BOGUSŁAWSKIEGO WOJCIECHA 10/16  WARSZAWA</AdresL1>
+      <AdresL2>01-923 WARSZAWA</AdresL2>
+    </Adres>
+    <NrKlienta>12161799</NrKlienta>
+    <JST>2</JST>
+    <GV>2</GV>
+  </Podmiot2>
+  <Fa>
+    <KodWaluty>PLN</KodWaluty>
+    <P_1>2026-02-04</P_1>
+    <P_2>11-120345-02262</P_2>
+    <P_13_1>114</P_13_1>
+    <P_14_1>26.22</P_14_1>
+    <P_15>140.22</P_15>
+    <Adnotacje>
+      <P_16>2</P_16>
+      <P_17>2</P_17>
+      <P_18>1</P_18>
+      <P_18A>2</P_18A>
+      <Zwolnienie>
+        <P_19N>1</P_19N>
+      </Zwolnienie>
+      <NoweSrodkiTransportu>
+        <P_22N>1</P_22N>
+      </NoweSrodkiTransportu>
+      <P_23>2</P_23>
+      <PMarzy>
+        <P_PMarzyN>1</P_PMarzyN>
+      </PMarzy>
+    </Adnotacje>
+    <RodzajFaktury>VAT</RodzajFaktury>
+    <FaWiersz>
+      <NrWierszaFa>1</NrWierszaFa>
+      <P_6A>2026-02-28</P_6A>
+      <P_7>Promocja Biznesowe Światłowody BP Fiber 100Mb / 300Mb</P_7>
+      <P_8A>usługa</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>99</P_9A>
+      <P_11>99</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>2</NrWierszaFa>
+      <P_6A>2026-02-28</P_6A>
+      <P_7>Abonament za korzystanie z pakietu hostingowego "Rozszerzony"</P_7>
+      <P_8A>usługa</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>15</P_9A>
+      <P_11>15</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <Platnosc>
+      <TerminPlatnosci>
+        <Termin>2026-02-18</Termin>
+      </TerminPlatnosci>
+      <FormaPlatnosci>6</FormaPlatnosci>
+      <RachunekBankowy>
+        <NrRB>77103019319000010012161799</NrRB>
+        <OpisRachunku>CITI Handlowy</OpisRachunku>
+      </RachunekBankowy>
+    </Platnosc>
+  </Fa>
+  <Stopka>
+    <Informacje>
+      <StopkaFaktury>Kapitał zakładowy: 3 937 072 437 zł</StopkaFaktury>
+    </Informacje>
+    <Rejestry>
+      <KRS>0000010681</KRS>
+      <REGON>012100784</REGON>
+      <BDO>000028832</BDO>
+    </Rejestry>
+  </Stopka>
+</Faktura>

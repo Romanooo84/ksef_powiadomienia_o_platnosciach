@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/" xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2022/01/05/eD/DefinicjeTypy/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Naglowek>
+        <KodFormularza wersjaSchemy="1-0E" kodSystemowy="FA (3)">FA</KodFormularza>
+        <WariantFormularza>3</WariantFormularza>
+        <DataWytworzeniaFa>2026-02-04T15:26:28Z</DataWytworzeniaFa>
+        <SystemInfo>AUMS</SystemInfo>
+    </Naglowek>
+    <Podmiot1>
+        <PrefiksPodatnika>PL</PrefiksPodatnika>
+        <DaneIdentyfikacyjne>
+            <NIP>7770020640</NIP>
+            <Nazwa>ENEA S.A.</Nazwa>
+        </DaneIdentyfikacyjne>
+        <Adres>
+            <KodKraju>PL</KodKraju>
+            <AdresL1>UL. PASTELOWA 8</AdresL1>
+            <AdresL2>60-198 POZNAŃ</AdresL2>
+        </Adres>
+        <AdresKoresp>
+            <KodKraju>PL</KodKraju>
+            <AdresL1>UL. ZACISZE 28</AdresL1>
+            <AdresL2>65-792 ZIELONA GÓRA</AdresL2>
+        </AdresKoresp>
+        <DaneKontaktowe>
+            <Telefon>+48/611111111</Telefon>
+        </DaneKontaktowe>
+    </Podmiot1>
+    <Podmiot2>
+        <DaneIdentyfikacyjne>
+            <NIP>1181646171</NIP>
+            <Nazwa>MD MARZENA PISARSKA</Nazwa>
+        </DaneIdentyfikacyjne>
+        <Adres>
+            <KodKraju>PL</KodKraju>
+            <AdresL1>ul. WOJCIECHA BOGUSŁAWSKIEGO 10/16</AdresL1>
+            <AdresL2>01-923 WARSZAWA</AdresL2>
+        </Adres>
+        <AdresKoresp>
+            <KodKraju>PL</KodKraju>
+            <AdresL1>ul. WRZECIONO 41</AdresL1>
+            <AdresL2>01-961 WARSZAWA</AdresL2>
+        </AdresKoresp>
+        <NrKlienta>22482746</NrKlienta>
+        <JST>2</JST>
+        <GV>2</GV>
+    </Podmiot2>
+    <Fa>
+        <KodWaluty>PLN</KodWaluty>
+        <P_1>2026-02-04</P_1>
+        <P_1M>POZNAŃ</P_1M>
+        <P_2>P/22482746/00001/26</P_2>
+        <OkresFa>
+            <P_6_Od>2025-12-12</P_6_Od>
+            <P_6_Do>2026-01-31</P_6_Do>
+        </OkresFa>
+        <P_13_1>5189.58</P_13_1>
+        <P_14_1>1193.60</P_14_1>
+        <P_15>6383.18</P_15>
+        <Adnotacje>
+            <P_16>2</P_16>
+            <P_17>2</P_17>
+            <P_18>2</P_18>
+            <P_18A>2</P_18A>
+            <Zwolnienie>
+                <P_19N>1</P_19N>
+            </Zwolnienie>
+            <NoweSrodkiTransportu>
+                <P_22N>1</P_22N>
+            </NoweSrodkiTransportu>
+            <P_23>2</P_23>
+            <PMarzy>
+                <P_PMarzyN>1</P_PMarzyN>
+            </PMarzy>
+        </Adnotacje>
+        <RodzajFaktury>VAT</RodzajFaktury>
+        <DodatkowyOpis>
+            <Klucz>Zużycie i akcyza</Klucz>
+            <Wartosc>Od 6041 kWh energii elektrycznej czynnej naliczono akcyzę w kwocie 30,22 zł</Wartosc>
+        </DodatkowyOpis>
+        <DodatkowyOpis>
+            <Klucz>Dane dot. PPE:590380100004479259</Klucz>
+            <Wartosc>Miejsce poboru energii: MD MARZENA PISARSKA, UL. WRZECIONO 41, 01-961 WARSZAWA; Za okres od 12/12/2025 do 31/01/2026; Grupa taryfowa: C12A; Ogółem wartość netto: 5 189,58 zł Energia zużyta w roku 2025: 47786 kWh; Energia zużyta w analogicznym okresie poprz</Wartosc>
+        </DodatkowyOpis>
+        <DodatkowyOpis>
+            <Klucz>Dane dot. PPE:590380100004479259</Klucz>
+            <Wartosc>edniego roku kalendarzowego: 5959 kWh</Wartosc>
+        </DodatkowyOpis>
+        <FaWiersz>
+            <NrWierszaFa>1</NrWierszaFa>
+            <P_6A>2025-12-31</P_6A>
+            <P_7>590380100004479259 Energia elektryczna czynna szczytowa</P_7>
+            <P_8A>kWh</P_8A>
+            <P_8B>776</P_8B>
+            <P_9A>0.785</P_9A>
+            <P_11>609.16</P_11>
+            <P_12>23</P_12>
+            <KwotaAkcyzy>3.88</KwotaAkcyzy>
+        </FaWiersz>
+        <FaWiersz>
+            <NrWierszaFa>2</NrWierszaFa>
+            <P_6A>2025-12-31</P_6A>
+            <P_7>590380100004479259 Energia elektryczna czynna pozaszczytowa</P_7>
+            <P_8A>kWh</P_8A>
+            <P_8B>1593</P_8B>
+            <P_9A>0.785</P_9A>
+            <P_11>1250.51</P_11>
+            <P_12>23</P_12>
+            <KwotaAkcyzy>7.97</KwotaAkcyzy>
+        </FaWiersz>
+        <FaWiersz>
+            <NrWierszaFa>3</NrWierszaFa>
+            <P_6A>2026-01-31</P_6A>
+            <P_7>590380100004479259 Energia elektryczna czynna szczytowa</P_7>
+            <P_8A>kWh</P_8A>
+            <P_8B>1203</P_8B>
+            <P_9A>1.031</P_9A>
+            <P_11>1240.29</P_11>
+            <P_12>23</P_12>
+            <KwotaAkcyzy>6.02</KwotaAkcyzy>
+        </FaWiersz>
+        <FaWiersz>
+            <NrWierszaFa>4</NrWierszaFa>
+            <P_6A>2026-01-31</P_6A>
+            <P_7>590380100004479259 Energia elektryczna czynna pozaszczytowa</P_7>
+            <P_8A>kWh</P_8A>
+            <P_8B>2469</P_8B>
+            <P_9A>0.835</P_9A>
+            <P_11>2061.62</P_11>
+            <P_12>23</P_12>
+            <KwotaAkcyzy>12.35</KwotaAkcyzy>
+        </FaWiersz>
+        <FaWiersz>
+            <NrWierszaFa>5</NrWierszaFa>
+            <P_6A>2025-12-31</P_6A>
+            <P_7>590380100004479259 Opłata handlowa</P_7>
+            <P_8A>zł/mc</P_8A>
+            <P_8B>0</P_8B>
+            <P_9A>16.50</P_9A>
+            <P_11>0.00</P_11>
+            <P_12>23</P_12>
+            <KwotaAkcyzy>0.00</KwotaAkcyzy>
+        </FaWiersz>
+        <FaWiersz>
+            <NrWierszaFa>6</NrWierszaFa>
+            <P_6A>2026-01-31</P_6A>
+            <P_7>590380100004479259 Opłata handlowa - eFaktura</P_7>
+            <P_8A>zł/mc</P_8A>
+            <P_8B>1</P_8B>
+            <P_9A>28.00</P_9A>
+            <P_11>28.00</P_11>
+            <P_12>23</P_12>
+            <KwotaAkcyzy>0.00</KwotaAkcyzy>
+        </FaWiersz>
+        <Rozliczenie>
+            <DoZaplaty>6383.18</DoZaplaty>
+        </Rozliczenie>
+        <Platnosc>
+            <TerminPlatnosci>
+                <Termin>2026-02-18</Termin>
+            </TerminPlatnosci>
+            <FormaPlatnosci>6</FormaPlatnosci>
+            <RachunekBankowy>
+                <NrRB>91124069600161224827460003</NrRB>
+                <RachunekWlasnyBanku>1</RachunekWlasnyBanku>
+                <NazwaBanku>Bank Pekao S.A.</NazwaBanku>
+            </RachunekBankowy>
+        </Platnosc>
+    </Fa>
+    <Stopka>
+        <Informacje>
+            <StopkaFaktury>Ogółem zużycie: 6041 kWh. Od 1.04.2025 r. obowiązuje Taryfa dla energii elektrycznej dla Klientów z grup taryfowych A, B, C, R; od 1.01.2025 r. Taryfa dla usług dystrybucji energii elektrycznej ENEA Operator. Taryfy dostępne są na enea.pl oraz w Biurach Obsługi Klienta. W przypadku umowy sprzedaży rezerwowej lub rezerwowej umowy kompleksowej z chwilą rozpoczęcia sprzedaży energii elektrycznej na podstawie nowej umowy, umowa rezerwowa ulega rozwiązaniu, bez konieczności jej wypowiadania. Na enea.pl/struktura-zuzycie-efektywnosc publikujemy informacje o strukturze paliw zużytych do wytworzenia energii elektrycznej sprzedanej przez ENEA S.A. i wpływie wytwarzania tej energii na środowisko, średnim zużyciu energii elektrycznej dla danej grupy taryfowej, a także o środkach poprawy efektywności energetycznej. Aktualna wersja Zbioru Praw Konsumenta dostępna jest na enea.pl/zbior-praw-konsumenta Administratorem Twoich danych osobowych jest Enea S.A.</StopkaFaktury>
+        </Informacje>
+    </Stopka>
+</Faktura>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/" xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2022/01/05/eD/DefinicjeTypy/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Naglowek>
+    <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+    <WariantFormularza>3</WariantFormularza>
+    <DataWytworzeniaFa>2026-02-04T08:45:01.507Z</DataWytworzeniaFa>
+    <SystemInfo>System Franko</SystemInfo>
+  </Naglowek>
+  <Podmiot1>
+    <DaneIdentyfikacyjne>
+      <NIP>9370008168</NIP>
+      <Nazwa>"CARREFOUR POLSKA" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>ul. Targowa 72</AdresL1>
+      <AdresL2>03-734 Warszawa</AdresL2>
+      <GLN>5900000930015</GLN>
+    </Adres>
+  </Podmiot1>
+  <Podmiot2>
+    <DaneIdentyfikacyjne>
+      <NIP>1181646171</NIP>
+      <Nazwa>MD MARZENA PISARSKA</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>UL.   BOGUSŁAWSKIEGO  10 lok. 16</AdresL1>
+      <AdresL2>01-923 WARSZAWA</AdresL2>
+    </Adres>
+    <NrKlienta>13354</NrKlienta>
+    <IDNabywcy>13354</IDNabywcy>
+    <JST>2</JST>
+    <GV>2</GV>
+  </Podmiot2>
+  <Podmiot3>
+    <IDNabywcy>C17</IDNabywcy>
+    <DaneIdentyfikacyjne>
+      <BrakID>1</BrakID>
+      <Nazwa>C17</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>Wrzeciono 41</AdresL1>
+      <AdresL2>01-950 Warszawa</AdresL2>
+    </Adres>
+    <Rola>2</Rola>
+  </Podmiot3>
+  <Fa>
+    <KodWaluty>PLN</KodWaluty>
+    <P_1>2026-02-04</P_1>
+    <P_2>FRT-26-F-2603380</P_2>
+    <WZ>5717/2000101/2026</WZ>
+    <P_6>2026-02-03</P_6>
+    <P_13_1>1701.60</P_13_1>
+    <P_14_1>391.37</P_14_1>
+    <P_13_2>0.00</P_13_2>
+    <P_14_2>0.00</P_14_2>
+    <P_13_3>0.00</P_13_3>
+    <P_14_3>0.00</P_14_3>
+    <P_13_6_1>0.00</P_13_6_1>
+    <P_13_7>0.00</P_13_7>
+    <P_15>2092.97</P_15>
+    <Adnotacje>
+      <P_16>2</P_16>
+      <P_17>2</P_17>
+      <P_18>2</P_18>
+      <P_18A>2</P_18A>
+      <Zwolnienie>
+        <P_19N>1</P_19N>
+      </Zwolnienie>
+      <NoweSrodkiTransportu>
+        <P_22N>1</P_22N>
+      </NoweSrodkiTransportu>
+      <P_23>2</P_23>
+      <PMarzy>
+        <P_PMarzyN>1</P_PMarzyN>
+      </PMarzy>
+    </Adnotacje>
+    <RodzajFaktury>VAT</RodzajFaktury>
+    <FaWiersz>
+      <NrWierszaFa>1</NrWierszaFa>
+      <UU_ID>95516</UU_ID>
+      <P_7>PAP JTI WINSTON CLASSIC BLUE KS</P_7>
+      <Indeks>1617474</Indeks>
+      <GTIN>59007685</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>10.0000</P_8B>
+      <P_9A>17.55</P_9A>
+      <P_11>175.50</P_11>
+      <P_11Vat>40.37</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>2</NrWierszaFa>
+      <UU_ID>95517</UU_ID>
+      <P_7>PAP PMP L&amp;M FIRST CUT RED 100</P_7>
+      <Indeks>1636979</Indeks>
+      <GTIN>5903621200154</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>10.0000</P_8B>
+      <P_9A>17.96</P_9A>
+      <P_11>179.60</P_11>
+      <P_11Vat>41.31</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>3</NrWierszaFa>
+      <UU_ID>95518</UU_ID>
+      <P_7>TYT EVO FOR PLOOM GREEN</P_7>
+      <Indeks>1786307</Indeks>
+      <GTIN>59009290</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>10.0000</P_8B>
+      <P_9A>12.94</P_9A>
+      <P_11>129.40</P_11>
+      <P_11Vat>29.76</P_11Vat>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>4</NrWierszaFa>
+      <UU_ID>95519</UU_ID>
+      <P_7>PAP PMP CHESTERFIELD BLUE KS (B17)</P_7>
+      <Indeks>1257313</Indeks>
+      <GTIN>5903621221838</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>10.0000</P_8B>
+      <P_9A>18.72</P_9A>
+      <P_11>187.20</P_11>
+      <P_11Vat>43.06</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>5</NrWierszaFa>
+      <UU_ID>95520</UU_ID>
+      <P_7>PAP BAT KENT BLUE KS</P_7>
+      <Indeks>1606312</Indeks>
+      <GTIN>59011583</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>10.0000</P_8B>
+      <P_9A>16.29</P_9A>
+      <P_11>162.90</P_11>
+      <P_11Vat>37.47</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>6</NrWierszaFa>
+      <UU_ID>95521</UU_ID>
+      <P_7>PAP IMP P&amp;S RED KS22 (B17)</P_7>
+      <Indeks>1270412</Indeks>
+      <GTIN>4030600184318</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>8.0000</P_8B>
+      <P_9A>23.95</P_9A>
+      <P_11>191.60</P_11>
+      <P_11Vat>44.07</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>7</NrWierszaFa>
+      <UU_ID>95522</UU_ID>
+      <P_7>TYT EVO FOR PLOOM VELVET</P_7>
+      <Indeks>1786312</Indeks>
+      <GTIN>59004936</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>10.0000</P_8B>
+      <P_9A>12.94</P_9A>
+      <P_11>129.40</P_11>
+      <P_11Vat>29.76</P_11Vat>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>8</NrWierszaFa>
+      <UU_ID>95523</UU_ID>
+      <P_7>PAP JTI WINSTON BLACK PINK SUP LINE</P_7>
+      <Indeks>1719974</Indeks>
+      <GTIN>59004745</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>10.0000</P_8B>
+      <P_9A>17.55</P_9A>
+      <P_11>175.50</P_11>
+      <P_11Vat>40.37</P_11Vat>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>9</NrWierszaFa>
+      <UU_ID>95524</UU_ID>
+      <P_7>PAP PMP MARLB SELECTO BRIGHT(B24)</P_7>
+      <Indeks>1687672</Indeks>
+      <GTIN>5903621212652</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>10.0000</P_8B>
+      <P_9A>18.32</P_9A>
+      <P_11>183.20</P_11>
+      <P_11Vat>42.14</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>10</NrWierszaFa>
+      <UU_ID>95525</UU_ID>
+      <P_7>PAP JTI WINSTON BLUE 100 (B17)</P_7>
+      <Indeks>1257300</Indeks>
+      <GTIN>59072423</GTIN>
+      <P_8A>szt</P_8A>
+      <P_8B>10.0000</P_8B>
+      <P_9A>18.73</P_9A>
+      <P_11>187.30</P_11>
+      <P_11Vat>43.08</P_11Vat>
+      <P_12>23</P_12>
+      <GTU>GTU_04</GTU>
+    </FaWiersz>
+    <Rozliczenie>
+      <DoZaplaty>2092.97</DoZaplaty>
+    </Rozliczenie>
+    <Platnosc>
+      <TerminPlatnosci>
+        <Termin>2026-02-25</Termin>
+      </TerminPlatnosci>
+      <FormaPlatnosci>6</FormaPlatnosci>
+      <RachunekBankowy>
+        <NrRB>39103015080000000501700827</NrRB>
+      </RachunekBankowy>
+    </Platnosc>
+  </Fa>
+  <Stopka>
+    <Rejestry>
+      <PelnaNazwa>"CARREFOUR POLSKA" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</PelnaNazwa>
+      <KRS>0000020710</KRS>
+      <REGON>070569406</REGON>
+      <BDO>000009699</BDO>
+    </Rejestry>
+  </Stopka>
+</Faktura>
