@@ -19,7 +19,8 @@ async function redeemAuthenticationToken(authenticationToken) {
   }
 
   const data = await res.json();
-
+  console.log(`termin ważności tokena dostępu: ${data.accessToken.validUntil}`);
+  
   return {
     accessToken: data.accessToken.token,
     accessTokenExpiresIn: data.accessToken.validUntil,

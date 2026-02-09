@@ -22,7 +22,7 @@ async function refreshKsefToken( refreshToken) {
 
    console.log(data);
 
-   return data.accessToken
+   return data.accessToken.token
 }
 
 export default refreshKsefToken;

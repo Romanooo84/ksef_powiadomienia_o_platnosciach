@@ -12,8 +12,10 @@ async function downloadInvoiceMetadata(accessToken,path, options = {}) {
     },
   });
 
-  if (res.status === 401|| res.status === 403) {
-    console.log(res.status);
+ 
+
+  if (res.status === 401|| res.status === 403 || res.status === 429) {
+     console.log(`Odpowiedź serwera KSeF: ${res.status} ${res.statusText}`);
     return res.status;
   }
 

@@ -2,6 +2,7 @@ import auth from './services/auth.js';
 import downloadInvoiceMetadata from './operations/downloadInvoiceMetadata.js';
 import downloadInvoiceXml from './operations/downloadXMLInvoice.js';
 import refreshKsefToken from './services/auth/refershToken.js';
+import readFileXml from './operations/readFileXml.js';
 import cron from 'node-cron'
 import "dotenv/config";
 
@@ -26,7 +27,7 @@ const main = async () => {
       dateRange: {
         dateType: "issue",
         from: "2026-02-01T00:00:00Z",
-        to:   "2026-02-06T17:59:59Z",
+        to:   "2026-02-01T23:59:59Z",
       },
     }),
   };
@@ -34,27 +35,27 @@ const main = async () => {
     
     try {
       console.log('pobieram metadane faktur KSeF...');
-      const startData = await downloadInvoiceMetadata(
+      let startData = await downloadInvoiceMetadata(
         accessTokenKsef,
         path,
         options
       );
 
+      console.log(startData);
+
       if (startData === 401 || startData === 403) {
-        console.log("Token wygasł, odświeżam...");
-       accessTokenKsef = await refreshKsefToken(refreshTokenKsef);
-       console.log(accessTokenKsef);
-       startData = await downloadInvoiceMetadata(
-        accessTokenKsef,
-        path,
-        options
-      );
-  
+          console.log("Token wygasł, odświeżam...");
+        accessTokenKsef = await refreshKsefToken(refreshTokenKsef);
+        console.log("Token odświeżony, ponawiam próbę pobrania metadanych faktur KSeF...");
+        startData = await downloadInvoiceMetadata(
+          accessTokenKsef,
+          path,
+          options
+        );
       }
       
       console.log("Pobieranie metadanych faktur KSeF zakończone.");
-
-      if (startData!=null & (startData != 401 & startData != 403)) {
+      if (startData!=null & startData != 401 & startData != 403 & startData != 429) {
           const invoiceNumbers = startData.invoices.map(
             invoice => invoice.ksefNumber
         );
@@ -62,12 +63,15 @@ const main = async () => {
         console.log(`Pobieranie XML faktur...`);
 
         for (const ksefNumber of invoiceNumbers) {
-          const xml = await downloadInvoiceXml(ksefNumber, accessTokenKsef);
+          await downloadInvoiceXml(ksefNumber, accessTokenKsef);
          }
+
+         await readFileXml();
 
          console.log("Pobieranie XML faktur zakończone.");
         } 
       } catch (error) {
+        console.error("Błąd podczas pobierania metadanych faktur KSeF:", error);
         return
       } 
     }
