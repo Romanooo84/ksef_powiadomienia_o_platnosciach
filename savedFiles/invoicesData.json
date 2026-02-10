@@ -34,6 +34,16 @@
     "NazwaFirmy": "Posnet Polska S.A.",
     "kwota": "47.97"
   },
+  "S2/26/02/881": {
+    "terminPlatnosci": "2026-02-23",
+    "NazwaFirmy": "Spółdzielnia Piekarsko-Ciastkarska w Warszawie Zakłady Piekarskie \"KRAKOWIAKÓW\"",
+    "kwota": "2347.33"
+  },
+  "K2/26/02/351": {
+    "terminPlatnosci": "2026-02-23",
+    "NazwaFirmy": "Spółdzielnia Piekarsko-Ciastkarska w Warszawie Zakłady Piekarskie \"KRAKOWIAKÓW\"",
+    "kwota": "-104.40"
+  },
   "D/EM/35/02/26/21837": {
     "terminPlatnosci": "2026-02-21",
     "NazwaFirmy": "SERIS KONSALNET SECURITY SP. Z O.O.",
@@ -63,6 +73,11 @@
     "terminPlatnosci": "2026-02-12",
     "NazwaFirmy": "LEASELINK SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
     "kwota": "70.65"
+  },
+  "9316029532": {
+    "terminPlatnosci": "2026-02-16",
+    "NazwaFirmy": "GOBARTO S.A.",
+    "kwota": "3241.71"
   },
   "P/22482746/00001/26": {
     "terminPlatnosci": "2026-02-18",
@@ -138,5 +153,15 @@
     "terminPlatnosci": "2026-02-28",
     "NazwaFirmy": "\"CARREFOUR POLSKA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
     "kwota": "2116.35"
+  },
+  "FRT-26-F-2605789": {
+    "terminPlatnosci": "2026-03-01",
+    "NazwaFirmy": "\"CARREFOUR POLSKA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kwota": "6946.94"
+  },
+  "FRT-26-F-2606231": {
+    "terminPlatnosci": "2026-03-02",
+    "NazwaFirmy": "\"CARREFOUR POLSKA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kwota": "9314.18"
   }
 }

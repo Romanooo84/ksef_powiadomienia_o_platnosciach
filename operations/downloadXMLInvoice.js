@@ -14,17 +14,16 @@ async function downloadInvoiceXml(ksefNumber, accessToken) {
       Authorization: `Bearer ${accessToken}`,
     },
   });
-
   if (res.status===429) {
-    console.log(res.status);
-    return res.status;
+    const errorText = await res.text();
+    return {status: res.status, error: errorText};
    
   } else{
     const xml = await res.text();
-  const outputDir = path.join(process.cwd(), "download");
-  const filePath = path.join(outputDir, `invoice-${ksefNumber}.xml`);
-  await fs.writeFile(filePath, xml, "utf8");
-  return xml;}
+    const outputDir = path.join(process.cwd(), "download");
+    const filePath = path.join(outputDir, `invoice-${ksefNumber}.xml`);
+    await fs.writeFile(filePath, xml, "utf8");
+    return xml;}
 
   
   

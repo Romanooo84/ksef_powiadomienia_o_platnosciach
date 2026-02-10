@@ -32,13 +32,13 @@ const main = async () => {
       subjectType: "subject2",
       dateRange: {
         dateType: "issue",
-        from: "2026-02-02T00:00:00Z",
-        to:   "2026-02-04T23:59:59Z",
+        from: "2026-02-01T00:00:00Z",
+        to:   "2026-02-09T23:59:59Z",
       },
     }),
   };
 
-  cron.schedule('*/1 * * * *', async () => {
+ // cron.schedule('*/50 * * * *', async () => {
     
     try {
       console.log('pobieram metadane faktur KSeF...');
@@ -48,16 +48,17 @@ const main = async () => {
         options
       );
 
-      console.log(startData)
+      for (const invoice of startData.invoices) {
+      }
       if (startData === 401 || startData === 403) {
           console.log("Token wygasł, odświeżam...");
-        accessTokenKsef = await refreshKsefToken(refreshTokenKsef);
-        console.log("Token odświeżony, ponawiam próbę pobrania metadanych faktur KSeF...");
-        startData = await downloadInvoiceMetadata(
-          accessTokenKsef,
-          path,
-          options
-        );
+          accessTokenKsef = await refreshKsefToken(refreshTokenKsef);
+          console.log("Token odświeżony, ponawiam próbę pobrania metadanych faktur KSeF...");
+          startData = await downloadInvoiceMetadata(
+            accessTokenKsef,
+            path,
+            options
+          );
       }
       
       console.log("Pobieranie metadanych faktur KSeF zakończone.");
@@ -73,17 +74,19 @@ const main = async () => {
 
           while (true) {
             downloadResult = await downloadInvoiceXml(ksefNumber, accessTokenKsef);
-
-            if (downloadResult === 429) {
-              console.log("⏸ KSeF 429 – czekam 5 minut...");
-              await sleep(5 * 60 * 1000);
+            
+          
+            if (downloadResult.status === 429) {
+              const seconds = Number(downloadResult.error?.match(/(\d+)\s*sekund/)?.[1]);
+              console.log(`kod 429 – czekam ${seconds/60} minut`);
+              await sleep(seconds * 1000);
               continue; // spróbuj jeszcze raz TEN SAM numer
             }
 
             break; // sukces albo inny błąd
           }
         } 
-
+        
          await readFileXml();
 
          console.log("Pobieranie XML faktur zakończone.");
@@ -95,6 +98,6 @@ const main = async () => {
       } 
     }
     
-  );  
-};
+ // );  
+//};
 main();
