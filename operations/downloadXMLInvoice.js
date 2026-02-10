@@ -22,6 +22,7 @@ async function downloadInvoiceXml(ksefNumber, accessToken) {
     const xml = await res.text();
     const outputDir = path.join(process.cwd(), "download");
     const filePath = path.join(outputDir, `invoice-${ksefNumber}.xml`);
+    console.log(`Pobieranie faktury ${ksefNumber} zakończone, zapisuję do: ${filePath}`);
     await fs.writeFile(filePath, xml, "utf8");
     return xml;}
 

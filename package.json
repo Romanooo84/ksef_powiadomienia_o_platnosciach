@@ -1,8 +1,11 @@
 {
   "type": "module",
   "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "@googleapis/docs": "^9.2.1",
     "axios": "^1.13.4",
     "dotenv": "^17.2.3",
+    "googleapis": "^105.0.0",
     "node-cron": "^4.2.1",
     "xml2js": "^0.6.2"
   }
