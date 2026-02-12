@@ -1,4 +1,5 @@
 import "dotenv/config";
+import { log } from "node:console";
 import fs from "node:fs/promises";
 import path from "path";
 
@@ -14,6 +15,9 @@ async function downloadInvoiceXml(ksefNumber, accessToken) {
       Authorization: `Bearer ${accessToken}`,
     },
   });
+
+  log(`Odpowiedź serwera KSeF dla faktury ${ksefNumber}: ${res.status} ${res.statusText}`);
+  
   if (res.status===429) {
     const errorText = await res.text();
     return {status: res.status, error: errorText};
@@ -25,9 +29,6 @@ async function downloadInvoiceXml(ksefNumber, accessToken) {
     console.log(`Pobieranie faktury ${ksefNumber} zakończone, zapisuję do: ${filePath}`);
     await fs.writeFile(filePath, xml, "utf8");
     return xml;}
-
-  
-  
 }
 
 export default downloadInvoiceXml;

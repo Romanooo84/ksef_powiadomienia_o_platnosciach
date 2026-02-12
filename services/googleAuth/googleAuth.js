@@ -17,6 +17,7 @@ async function auth() {
     keyfilePath: CREDENTIALS_PATH,
   });
   console.log("✅ Google authentication successful.");
+  console.log(auth)
   return auth
 }
 

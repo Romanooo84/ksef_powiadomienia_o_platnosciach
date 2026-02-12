@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+  <Naglowek>
+    <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+    <WariantFormularza>3</WariantFormularza>
+    <DataWytworzeniaFa>2026-02-10T00:00:00+01:00</DataWytworzeniaFa>
+    <SystemInfo>SoftHard - ZSI Papirus SQL</SystemInfo>
+  </Naglowek>
+  <Podmiot1>
+    <DaneIdentyfikacyjne>
+      <NIP>5252248481</NIP>
+      <Nazwa>Miasto Stołeczne Warszawa</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>00-950 Warszawa, Pl. Bankowy 3/5</AdresL1>
+    </Adres>
+  </Podmiot1>
+  <Podmiot2>
+    <DaneIdentyfikacyjne>
+      <NIP>1181646171</NIP>
+      <Nazwa>MD MARZENA PISARSKA</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>01-923 Warszawa, Wojciecha Bogusławskiego 10m16</AdresL1>
+    </Adres>
+    <NrKlienta>37382</NrKlienta>
+    <JST>2</JST>
+    <GV>2</GV>
+  </Podmiot2>
+  <Podmiot3>
+    <DaneIdentyfikacyjne>
+      <NIP>1181765177</NIP>
+      <Nazwa>"ZAKŁAD GOSPODAROWANIA NIERUCHOMOŚCIAMI W DZIELNICY BIELANY M.ST.WARSZAWY"</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>01-808 Warszawa, Grębałowska 23 /25</AdresL1>
+    </Adres>
+    <DaneKontaktowe>
+      <Telefon>226705200</Telefon>
+    </DaneKontaktowe>
+    <Rola>7</Rola>
+    <NrKlienta>10115</NrKlienta>
+  </Podmiot3>
+  <Fa>
+    <KodWaluty>PLN</KodWaluty>
+    <P_1>2026-02-10</P_1>
+    <P_1M>Warszawa</P_1M>
+    <P_2>00664/GN/BI/02/2026/FN/U</P_2>
+    <P_6>2026-02-28</P_6>
+    <P_13_1>5816.3</P_13_1>
+    <P_14_1>1337.75</P_14_1>
+    <P_13_2>0</P_13_2>
+    <P_14_2>0</P_14_2>
+    <P_13_3>0</P_13_3>
+    <P_14_3>0</P_14_3>
+    <P_13_7>0</P_13_7>
+    <P_15>7154.05</P_15>
+    <Adnotacje>
+      <P_16>2</P_16>
+      <P_17>2</P_17>
+      <P_18>2</P_18>
+      <P_18A>2</P_18A>
+      <Zwolnienie>
+        <P_19N>1</P_19N>
+      </Zwolnienie>
+      <NoweSrodkiTransportu>
+        <P_22N>1</P_22N>
+      </NoweSrodkiTransportu>
+      <P_23>2</P_23>
+      <PMarzy>
+        <P_PMarzyN>1</P_PMarzyN>
+      </PMarzy>
+    </Adnotacje>
+    <RodzajFaktury>VAT</RodzajFaktury>
+    <DodatkowyOpis>
+      <Klucz>Dotyczy lokalu</Klucz>
+      <Wartosc>U620018 przy ulicy ul. Wrzeciono 41   U-05</Wartosc>
+    </DodatkowyOpis>
+    <DodatkowyOpis>
+      <Klucz>Uwagi księgowania</Klucz>
+      <Wartosc>Przypis za luty 2026 r.</Wartosc>
+    </DodatkowyOpis>
+    <FaWiersz>
+      <NrWierszaFa>1</NrWierszaFa>
+      <UU_ID>51760535</UU_ID>
+      <P_7>Czynsz (piwnica)</P_7>
+      <P_8A>m2</P_8A>
+      <P_8B>53.6</P_8B>
+      <P_9A>12.54</P_9A>
+      <P_11>672.14</P_11>
+      <P_11A>826.73</P_11A>
+      <P_11Vat>154.59</P_11Vat>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>2</NrWierszaFa>
+      <UU_ID>51760534</UU_ID>
+      <P_7>Czynsz</P_7>
+      <P_8A>m2</P_8A>
+      <P_8B>137.9</P_8B>
+      <P_9A>32.59</P_9A>
+      <P_11>4494.16</P_11>
+      <P_11A>5527.82</P_11A>
+      <P_11Vat>1033.66</P_11Vat>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>3</NrWierszaFa>
+      <UU_ID>51760533</UU_ID>
+      <P_7>czynsz za powierzchnię podnajm</P_7>
+      <P_8A>M2</P_8A>
+      <P_8B>10</P_8B>
+      <P_9A>65</P_9A>
+      <P_11>650</P_11>
+      <P_11A>799.5</P_11A>
+      <P_11Vat>149.5</P_11Vat>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <Platnosc>
+      <TerminPlatnosci>
+        <Termin>2026-02-27</Termin>
+      </TerminPlatnosci>
+      <FormaPlatnosci>6</FormaPlatnosci>
+      <RachunekBankowy>
+        <NrRB>45103019447454200000225167</NrRB>
+        <NazwaBanku>Czynsz</NazwaBanku>
+        <OpisRachunku>Citi H</OpisRachunku>
+      </RachunekBankowy>
+    </Platnosc>
+    <WarunkiTransakcji>
+      <Umowy>
+        <DataUmowy>2022-02-17</DataUmowy>
+        <NrUmowy>UMOWA NAJMU ZL-21/2022</NrUmowy>
+      </Umowy>
+    </WarunkiTransakcji>
+  </Fa>
+  <Stopka>
+    <Rejestry>
+      <PelnaNazwa>Miasto Stołeczne Warszawa</PelnaNazwa>
+      <REGON>015259640</REGON>
+    </Rejestry>
+  </Stopka>
+</Faktura>

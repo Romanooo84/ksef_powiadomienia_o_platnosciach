@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+   <Naglowek>
+      <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+      <WariantFormularza>3</WariantFormularza>
+      <DataWytworzeniaFa>2026-02-09T21:10:17.000+01:00</DataWytworzeniaFa>
+      <SystemInfo>Fakturownia.pl</SystemInfo>
+   </Naglowek>
+   <Podmiot1>
+      <DaneIdentyfikacyjne>
+         <NIP>5361951179</NIP>
+         <Nazwa>AGK Services Sp. z o.o.</Nazwa>
+      </DaneIdentyfikacyjne>
+      <Adres>
+         <KodKraju>PL</KodKraju>
+         <AdresL1>Onyksowa 2/2</AdresL1>
+         <AdresL2>05-101 Trzciany</AdresL2>
+      </Adres>
+      <DaneKontaktowe>
+         <Email>biuro@igli.com.pl</Email>
+         <Telefon>607-988-889</Telefon>
+      </DaneKontaktowe>
+      <DaneKontaktowe>
+         <Telefon>601-795-787</Telefon>
+      </DaneKontaktowe>
+   </Podmiot1>
+   <Podmiot2>
+      <DaneIdentyfikacyjne>
+         <NIP>1181646171</NIP>
+         <Nazwa>MD MARZENA PISARSKA</Nazwa>
+      </DaneIdentyfikacyjne>
+      <Adres>
+         <KodKraju>PL</KodKraju>
+         <AdresL1>Wojciecha Bogusławskiego 10/16</AdresL1>
+         <AdresL2>01-923 Warszawa</AdresL2>
+      </Adres>
+      <JST>2</JST>
+      <GV>2</GV>
+   </Podmiot2>
+   <Fa>
+      <KodWaluty>PLN</KodWaluty>
+      <P_1>2026-02-10</P_1>
+      <P_1M>Trzciany</P_1M>
+      <P_2>126/02/2026</P_2>
+      <WZ>WZ627</WZ>
+      <P_6>2026-02-10</P_6>
+      <P_13_3>158.4</P_13_3>
+      <P_14_3>7.92</P_14_3>
+      <P_15>166.32</P_15>
+      <Adnotacje>
+         <P_16>2</P_16>
+         <P_17>2</P_17>
+         <P_18>2</P_18>
+         <P_18A>2</P_18A>
+         <Zwolnienie>
+            <P_19N>1</P_19N>
+         </Zwolnienie>
+         <NoweSrodkiTransportu>
+            <P_22N>1</P_22N>
+         </NoweSrodkiTransportu>
+         <P_23>2</P_23>
+         <PMarzy>
+            <P_PMarzyN>1</P_PMarzyN>
+         </PMarzy>
+      </Adnotacje>
+      <RodzajFaktury>VAT</RodzajFaktury>
+      <FaWiersz>
+         <NrWierszaFa>1</NrWierszaFa>
+         <P_7>Jaja Konsumpcyjne Świeże 3 PL Kl. A</P_7>
+         <P_8A>szt</P_8A>
+         <P_8B>180</P_8B>
+         <P_9A>0.88</P_9A>
+         <P_11>158.4</P_11>
+         <P_12>5</P_12>
+      </FaWiersz>
+      <Platnosc>
+         <TerminPlatnosci>
+            <Termin>2026-02-10</Termin>
+         </TerminPlatnosci>
+         <FormaPlatnosci>1</FormaPlatnosci>
+         <RachunekBankowy>
+            <NrRB>PL14109010140000000159888952</NrRB>
+         </RachunekBankowy>
+      </Platnosc>
+   </Fa>
+   <Stopka>
+      <Informacje>
+         <StopkaFaktury>Faktura stanowi jednocześnie (HDI) - Handlowy Dokument Identyfikacyjny. Jaja naświetlane promieniami UV-C. Weterynaryjny numer producenta podany na jajku. Data przydatności 01-03-2026 jest numerem partii. Zalecana temperatura przechowywania jaj wynosi 2–8°C.</StopkaFaktury>
+      </Informacje>
+   </Stopka>
+</Faktura>

@@ -1,4 +1,5 @@
 import "dotenv/config";
+import log from "./saveAndLog.js";
 
 const KSEF_AUTH_URL = process.env.KSEF_AUTH_URL;
 const pageSize = 100;
@@ -14,7 +15,8 @@ async function downloadInvoiceMetadata(accessToken,path, options = {}) {
     },
   });
 
- 
+ log(` 18 downloadMetada.js Odpowiedź serwera KSeF: ${res.status} ${res.statusText}`);
+ log(res.json)
 
   if (res.status === 401|| res.status === 403 || res.status === 429) {
      console.log(`Odpowiedź serwera KSeF: ${res.status} ${res.statusText}`);
@@ -22,6 +24,7 @@ async function downloadInvoiceMetadata(accessToken,path, options = {}) {
   }
 
     if (!res.ok) {
+      log(`Błąd podczas pobierania metadanych faktur KSeF: ${res.status} ${res.statusText}`);
       return null;
     }
 

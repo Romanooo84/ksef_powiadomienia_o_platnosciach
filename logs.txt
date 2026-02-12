@@ -1,0 +1,8 @@
+[2026-02-12T07:19:14.574Z] logowanie do Google
+[2026-02-12T07:19:14.576Z] zalogowane do Google
+[2026-02-12T07:19:14.576Z] startuję aplikację
+[2026-02-12T07:19:14.594Z] Listening on
+[2026-02-12T07:21:06.627Z] logowanie do Google
+[2026-02-12T07:21:06.628Z] zalogowane do Google
+[2026-02-12T07:21:06.628Z] startuję aplikację
+[2026-02-12T07:21:06.648Z] Listening on

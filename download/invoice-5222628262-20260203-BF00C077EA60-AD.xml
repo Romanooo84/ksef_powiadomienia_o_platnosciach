@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+    <Naglowek>
+        <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+        <WariantFormularza>3</WariantFormularza>
+        <DataWytworzeniaFa>2026-02-03T14:06:38Z</DataWytworzeniaFa>
+        <SystemInfo>Streamsoft Verto</SystemInfo>
+    </Naglowek>
+    <Podmiot1>
+        <PrefiksPodatnika>PL</PrefiksPodatnika>
+        <DaneIdentyfikacyjne>
+            <NIP>5222628262</NIP>
+            <Nazwa>Posnet Polska S.A.</Nazwa>
+        </DaneIdentyfikacyjne>
+        <Adres>
+            <KodKraju>PL</KodKraju>
+            <AdresL1>Municypalna 33</AdresL1>
+            <AdresL2>02-281 Warszawa</AdresL2>
+        </Adres>
+    </Podmiot1>
+    <Podmiot2>
+        <DaneIdentyfikacyjne>
+            <NIP>1181646171</NIP>
+            <Nazwa>MD MARZENA PISARSKA</Nazwa>
+        </DaneIdentyfikacyjne>
+        <Adres>
+            <KodKraju>PL</KodKraju>
+            <AdresL1>Wojciecha Bogusławskiego 10 16</AdresL1>
+            <AdresL2>01-923 Warszawa</AdresL2>
+        </Adres>
+        <JST>2</JST>
+        <GV>2</GV>
+    </Podmiot2>
+    <Fa>
+        <KodWaluty>PLN</KodWaluty>
+        <P_1>2026-02-03</P_1>
+        <P_1M>Warszawa</P_1M>
+        <P_2>FAS/1882/13A/2026</P_2>
+        <P_6>2026-02-28</P_6>
+        <P_13_1>39.00</P_13_1>
+        <P_14_1>8.97</P_14_1>
+        <P_15>47.97</P_15>
+        <Adnotacje>
+            <P_16>2</P_16>
+            <P_17>2</P_17>
+            <P_18>2</P_18>
+            <P_18A>2</P_18A>
+            <Zwolnienie>
+                <P_19N>1</P_19N>
+            </Zwolnienie>
+            <NoweSrodkiTransportu>
+                <P_22N>1</P_22N>
+            </NoweSrodkiTransportu>
+            <P_23>2</P_23>
+            <PMarzy>
+                <P_PMarzyN>1</P_PMarzyN>
+            </PMarzy>
+        </Adnotacje>
+        <RodzajFaktury>VAT</RodzajFaktury>
+        <FaWiersz>
+            <NrWierszaFa>1</NrWierszaFa>
+            <P_7>Wynajem terminala - rata nr 67 do umowy 
+UN3/ES/0004/025998/2020 z dnia 2020-07-29</P_7>
+            <P_8A>szt</P_8A>
+            <P_8B>1.0000</P_8B>
+            <P_9A>39.00</P_9A>
+            <P_11>39.00</P_11>
+            <P_11Vat>8.97</P_11Vat>
+            <P_12>23</P_12>
+        </FaWiersz>
+        <Platnosc>
+            <TerminPlatnosci>
+                <Termin>2026-02-17</Termin>
+                <TerminOpis>
+                    <Ilosc>14</Ilosc>
+                    <Jednostka>dzień</Jednostka>
+                    <ZdarzeniePoczatkowe>wystawienie faktury</ZdarzeniePoczatkowe>
+                </TerminOpis>
+            </TerminPlatnosci>
+            <FormaPlatnosci>6</FormaPlatnosci>
+            <RachunekBankowy>
+                <NrRB>PL33109000047292000000035598</NrRB>
+                <SWIFT>WBKPPLPPXXX</SWIFT>
+                <NazwaBanku>Santander Bank Polska SA</NazwaBanku>
+                <OpisRachunku>Konto wirtualne</OpisRachunku>
+            </RachunekBankowy>
+        </Platnosc>
+    </Fa>
+    <Stopka>
+        <Rejestry>
+            <PelnaNazwa>Posnet Polska S.A.</PelnaNazwa>
+            <REGON>017428510</REGON>
+            <BDO>000013271</BDO>
+        </Rejestry>
+    </Stopka>
+</Faktura>

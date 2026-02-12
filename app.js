@@ -1,103 +1,52 @@
-import auth from './services/auth.js';
-import downloadInvoiceMetadata from './operations/downloadInvoiceMetadata.js';
-import downloadInvoiceXml from './operations/downloadXMLInvoice.js';
-import refreshKsefToken from './services/auth/refershToken.js';
-import readFileXml from './operations/readFileXml.js';
+import invoiceOperations from "./mainThreads/InvoiceOperations.js";
+import addEventToCallendar from "./operations/addEventToCallendar.js";
 import cron from 'node-cron'
-import "dotenv/config";
+import getGoogleAuthClient from "./services/googleAuth/serverGoogleAuth.js";
+import log from "./operations/saveAndLog.js";
+import http from "node:http";
+import fs from "node:fs";
 
-let accessTokenKsef;
-let refreshTokenKsef;
-let referenceNumberKsef;
+const port = process.env.PORT || 3000;
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+http.createServer((req, res) => {
 
-const accessTokenData = async () => {
-  const { accessToken, refreshToken, referenceNumber } = await auth();
-  accessTokenKsef = accessToken;
-  refreshTokenKsef = refreshToken;
-  referenceNumberKsef = referenceNumber;
-}
+  if (req.url === "/test") {
+
+    // zapis do pliku w katalogu aplikacji
+    fs.appendFileSync("test.txt", "Wywołanie: " + new Date().toISOString() + "\n");
+
+    res.end("dziaLa.....");
+    log('działa')
+    return;
+  }
+
+  res.statusCode = 404;
+  res.end("404");
+
+}).listen(port, () => {
+  console.log("Serwer działa na porcie", port);
+  log("Serwer działa na porcie", port)
+});
+
+
+log('logowanie do Google')
+const auth = getGoogleAuthClient();
+log('startuję aplikację')
+
 const main = async () => {
-  await accessTokenData();
 
+  log("Uruchamiam aplikację...");
+  
+  
+  const delayKsefTime = '* 9 * * *'
+  const delayCallendarTime = '20 9 * * *'
+  
+  log(`Ustawiam zadanie pobierania danych z KSeF na ${delayKsefTime}...`);
+  log(`Ustawiam zadanie dodawania wydarzeń do kalendarza na ${delayCallendarTime}...`);
+  
+  await invoiceOperations(delayKsefTime);
+  
+  cron.schedule(delayCallendarTime, async () => {await addEventToCallendar(auth)});
+}
 
-  const path = "/invoices/query/metadata";
-  const options = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      subjectType: "subject2",
-      dateRange: {
-        dateType: "issue",
-        from: "2026-02-01T00:00:00Z",
-        to:   "2026-02-09T23:59:59Z",
-      },
-    }),
-  };
-
- // cron.schedule('*/50 * * * *', async () => {
-    
-    try {
-      console.log('pobieram metadane faktur KSeF...');
-      let startData = await downloadInvoiceMetadata(
-        accessTokenKsef,
-        path,
-        options
-      );
-
-      for (const invoice of startData.invoices) {
-      }
-      if (startData === 401 || startData === 403) {
-          console.log("Token wygasł, odświeżam...");
-          accessTokenKsef = await refreshKsefToken(refreshTokenKsef);
-          console.log("Token odświeżony, ponawiam próbę pobrania metadanych faktur KSeF...");
-          startData = await downloadInvoiceMetadata(
-            accessTokenKsef,
-            path,
-            options
-          );
-      }
-      
-      console.log("Pobieranie metadanych faktur KSeF zakończone.");
-      if (startData!=null & startData != 401 & startData != 403 & startData != 429) {
-          const invoiceNumbers = startData.invoices.map(
-            invoice => invoice.ksefNumber
-        );
-        console.log(`Znaleziono ${invoiceNumbers.length} faktur.`);
-        console.log(`Pobieranie XML faktur...`);
-
-        for (const ksefNumber of invoiceNumbers) {
-          let downloadResult
-
-          while (true) {
-            downloadResult = await downloadInvoiceXml(ksefNumber, accessTokenKsef);
-            
-          
-            if (downloadResult.status === 429) {
-              const seconds = Number(downloadResult.error?.match(/(\d+)\s*sekund/)?.[1]);
-              console.log(`kod 429 – czekam ${seconds/60} minut`);
-              await sleep(seconds * 1000);
-              continue; // spróbuj jeszcze raz TEN SAM numer
-            }
-
-            break; // sukces albo inny błąd
-          }
-        } 
-        
-         await readFileXml();
-
-         console.log("Pobieranie XML faktur zakończone.");
-       
-      }
-      } catch (error) {
-        console.error("Błąd podczas pobierania metadanych faktur KSeF:", error);
-        return
-      } 
-    }
-    
- // );  
-//};
 main();

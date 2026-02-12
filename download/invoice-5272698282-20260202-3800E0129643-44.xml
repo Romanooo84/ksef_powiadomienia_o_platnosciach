@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+    <Naglowek>
+        <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+        <WariantFormularza>3</WariantFormularza>
+        <DataWytworzeniaFa>2026-02-02T10:19:42.994+01:00</DataWytworzeniaFa>
+        <SystemInfo>Q-ERP-3000</SystemInfo>
+    </Naglowek>
+    <Podmiot1>
+        <PrefiksPodatnika>PL</PrefiksPodatnika>
+        <DaneIdentyfikacyjne>
+            <NIP>5272698282</NIP>
+            <Nazwa>LEASELINK SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</Nazwa>
+        </DaneIdentyfikacyjne>
+        <Adres>
+            <KodKraju>PL</KodKraju>
+            <AdresL1>Ul. Grochowska 306/308&#13;
+03-840 Warszawa&#13;
+</AdresL1>
+        </Adres>
+        <AdresKoresp>
+            <KodKraju>PL</KodKraju>
+            <AdresL1>Ul. Grochowska 306/308&#13;
+03-840 Warszawa&#13;
+</AdresL1>
+        </AdresKoresp>
+    </Podmiot1>
+    <Podmiot2>
+        <DaneIdentyfikacyjne>
+            <NIP>1181646171</NIP>
+            <Nazwa>MD MARZENA PISARSKA</Nazwa>
+        </DaneIdentyfikacyjne>
+        <Adres>
+            <KodKraju>PL</KodKraju>
+            <AdresL1>Wojciecha Bogusławskiego 10/16&#13;
+01-923 Warszawa</AdresL1>
+        </Adres>
+        <JST>2</JST>
+        <GV>2</GV>
+    </Podmiot2>
+    <Fa>
+        <KodWaluty>PLN</KodWaluty>
+        <P_1>2026-02-02</P_1>
+        <P_2>19450/02/2026/UL</P_2>
+        <P_13_1>57.44</P_13_1>
+        <P_14_1>13.21</P_14_1>
+        <P_15>70.65</P_15>
+        <Adnotacje>
+            <P_16>2</P_16>
+            <P_17>2</P_17>
+            <P_18>2</P_18>
+            <P_18A>2</P_18A>
+            <Zwolnienie>
+                <P_19N>1</P_19N>
+            </Zwolnienie>
+            <NoweSrodkiTransportu>
+                <P_22N>1</P_22N>
+            </NoweSrodkiTransportu>
+            <P_23>2</P_23>
+            <PMarzy>
+                <P_PMarzyN>1</P_PMarzyN>
+            </PMarzy>
+        </Adnotacje>
+        <RodzajFaktury>VAT</RodzajFaktury>
+        <FaWiersz>
+            <NrWierszaFa>1</NrWierszaFa>
+            <P_7>9 Okresowa opłata leasingowa do umowy LL-i-303588-2025 (kapitał: 25,71; odsetki: 31,73)</P_7>
+            <P_8A>rata</P_8A>
+            <P_8B>1.0</P_8B>
+            <P_9A>57.44</P_9A>
+            <P_11>57.44</P_11>
+            <P_11Vat>13.21</P_11Vat>
+            <P_12>23</P_12>
+        </FaWiersz>
+        <Platnosc>
+            <TerminPlatnosci>
+                <Termin>2026-02-12</Termin>
+                <TerminOpis>
+                    <Ilosc>10</Ilosc>
+                    <Jednostka>Dni</Jednostka>
+                    <ZdarzeniePoczatkowe>Data wystawienia dokumentu</ZdarzeniePoczatkowe>
+                </TerminOpis>
+            </TerminPlatnosci>
+            <FormaPlatnosci>6</FormaPlatnosci>
+            <RachunekBankowy>
+                <NrRB>71114010103736001181646171</NrRB>
+                <SWIFT>BREXPLPWMBK</SWIFT>
+                <NazwaBanku>mBank</NazwaBanku>
+                <OpisRachunku>mBank</OpisRachunku>
+            </RachunekBankowy>
+        </Platnosc>
+    </Fa>
+    <Stopka>
+        <Rejestry>
+            <PelnaNazwa>LEASELINK SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</PelnaNazwa>
+            <KRS>0000477046</KRS>
+        </Rejestry>
+    </Stopka>
+</Faktura>
