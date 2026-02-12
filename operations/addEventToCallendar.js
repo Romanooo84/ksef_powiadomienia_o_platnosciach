@@ -48,7 +48,7 @@ const addEventToCallendar = async (authorization) => {
           ],
         },
         attendees: [
-        { email: "pisarski.roman@gmail.com" },
+        { email: "pisarska.miska@gmail.com" },
       ],
       };
 

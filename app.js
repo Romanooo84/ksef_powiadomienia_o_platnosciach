@@ -10,13 +10,13 @@ const port = process.env.PORT || 3000;
 
 http.createServer((req, res) => {
 
-  if (req.url === "/test") {
+  if (req.url === "/start") {
 
     // zapis do pliku w katalogu aplikacji
     fs.appendFileSync("test.txt", "Wywołanie: " + new Date().toISOString() + "\n");
 
-    res.end("dziaLa.....");
-    log('działa')
+    res.end("Aplikacja uruchomiona");
+    log("Aplikacja uruchomiona")
     return;
   }
 
@@ -36,10 +36,8 @@ log('startuję aplikację')
 const main = async () => {
 
   log("Uruchamiam aplikację...");
-  
-  
-  const delayKsefTime = '10 11 * * *'
-  const delayCallendarTime = '20 11 * * *'
+  const delayKsefTime = '30 00 * * *'
+  const delayCallendarTime = '30 1 * * *'
   
   log(`Ustawiam zadanie pobierania danych z KSeF na ${delayKsefTime}...`);
   log(`Ustawiam zadanie dodawania wydarzeń do kalendarza na ${delayCallendarTime}...`);

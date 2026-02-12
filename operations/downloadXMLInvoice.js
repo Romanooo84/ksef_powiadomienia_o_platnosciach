@@ -1,5 +1,5 @@
 import "dotenv/config";
-import log from "node:console";
+import log from "./saveAndLog.js";
 import fs from "node:fs/promises";
 import path from "path";
 
