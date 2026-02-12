@@ -17,6 +17,7 @@ async function downloadInvoiceMetadata(accessToken,path, options = {}) {
 
  log(` 18 downloadMetada.js Odpowiedź serwera KSeF: ${res.status} ${res.statusText}`);
  log(res.json)
+ console.log(res.json)
 
   if (res.status === 401|| res.status === 403 || res.status === 429) {
      console.log(`Odpowiedź serwera KSeF: ${res.status} ${res.statusText}`);

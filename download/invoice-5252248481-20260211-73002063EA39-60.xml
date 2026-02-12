@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+  <Naglowek>
+    <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+    <WariantFormularza>3</WariantFormularza>
+    <DataWytworzeniaFa>2026-02-11T00:00:00+01:00</DataWytworzeniaFa>
+    <SystemInfo>SoftHard - ZSI Papirus SQL</SystemInfo>
+  </Naglowek>
+  <Podmiot1>
+    <DaneIdentyfikacyjne>
+      <NIP>5252248481</NIP>
+      <Nazwa>Miasto Stołeczne Warszawa</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>00-950 Warszawa, Pl. Bankowy 3/5</AdresL1>
+    </Adres>
+  </Podmiot1>
+  <Podmiot2>
+    <DaneIdentyfikacyjne>
+      <NIP>1181646171</NIP>
+      <Nazwa>MD MARZENA PISARSKA</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>01-923 Warszawa, Wojciecha Bogusławskiego 10m16</AdresL1>
+    </Adres>
+    <AdresKoresp>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>MD Marzena Pisarska</AdresL1>
+      <AdresL2>Wrzeciono 41, 01-963 Warszawa</AdresL2>
+    </AdresKoresp>
+    <NrKlienta>37382</NrKlienta>
+    <JST>2</JST>
+    <GV>2</GV>
+  </Podmiot2>
+  <Podmiot3>
+    <DaneIdentyfikacyjne>
+      <NIP>1181765177</NIP>
+      <Nazwa>"ZAKŁAD GOSPODAROWANIA NIERUCHOMOŚCIAMI W DZIELNICY BIELANY M.ST.WARSZAWY"</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>01-808 Warszawa, Grębałowska 23 /25</AdresL1>
+    </Adres>
+    <DaneKontaktowe>
+      <Telefon>226705200</Telefon>
+    </DaneKontaktowe>
+    <Rola>7</Rola>
+    <NrKlienta>10115</NrKlienta>
+  </Podmiot3>
+  <Fa>
+    <KodWaluty>PLN</KodWaluty>
+    <P_1>2026-02-11</P_1>
+    <P_1M>Warszawa</P_1M>
+    <P_2>00890/GN/BI/02/2026/FN/U</P_2>
+    <P_6>2026-02-28</P_6>
+    <P_13_1>1629</P_13_1>
+    <P_14_1>374.67</P_14_1>
+    <P_13_2>165.72</P_13_2>
+    <P_14_2>13.26</P_14_2>
+    <P_13_3>0</P_13_3>
+    <P_14_3>0</P_14_3>
+    <P_13_7>0</P_13_7>
+    <P_15>2182.65</P_15>
+    <Adnotacje>
+      <P_16>2</P_16>
+      <P_17>2</P_17>
+      <P_18>2</P_18>
+      <P_18A>2</P_18A>
+      <Zwolnienie>
+        <P_19N>1</P_19N>
+      </Zwolnienie>
+      <NoweSrodkiTransportu>
+        <P_22N>1</P_22N>
+      </NoweSrodkiTransportu>
+      <P_23>2</P_23>
+      <PMarzy>
+        <P_PMarzyN>1</P_PMarzyN>
+      </PMarzy>
+    </Adnotacje>
+    <RodzajFaktury>VAT</RodzajFaktury>
+    <DodatkowyOpis>
+      <Klucz>Dotyczy lokalu</Klucz>
+      <Wartosc>U620018 przy ulicy ul. Wrzeciono 41   U-05</Wartosc>
+    </DodatkowyOpis>
+    <DodatkowyOpis>
+      <Klucz>Uwagi księgowania</Klucz>
+      <Wartosc>Przypis za luty 2026 r.</Wartosc>
+    </DodatkowyOpis>
+    <FaWiersz>
+      <NrWierszaFa>1</NrWierszaFa>
+      <UU_ID>51768849</UU_ID>
+      <P_7>centralne ogrzewanie opłata stała-użytki</P_7>
+      <P_8A>m2</P_8A>
+      <P_8B>147.9</P_8B>
+      <P_9A>2</P_9A>
+      <P_11>295.8</P_11>
+      <P_11A>363.83</P_11A>
+      <P_11Vat>68.03</P_11Vat>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>2</NrWierszaFa>
+      <UU_ID>51768850</UU_ID>
+      <P_7>C.O. zmienne</P_7>
+      <P_8A>m2</P_8A>
+      <P_8B>147.9</P_8B>
+      <P_9A>8</P_9A>
+      <P_11>1183.2</P_11>
+      <P_11A>1455.34</P_11A>
+      <P_11Vat>272.14</P_11Vat>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>3</NrWierszaFa>
+      <UU_ID>51768851</UU_ID>
+      <P_7>Ciepła woda opłata zmienna</P_7>
+      <P_8A>m-c</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>150</P_9A>
+      <P_11>150</P_11>
+      <P_11A>184.5</P_11A>
+      <P_11Vat>34.5</P_11Vat>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>4</NrWierszaFa>
+      <UU_ID>51768853</UU_ID>
+      <P_7>Kanalizacja</P_7>
+      <PKWiU>90</PKWiU>
+      <P_8A>m3</P_8A>
+      <P_8B>12</P_8B>
+      <P_9A>8.33</P_9A>
+      <P_11>99.96</P_11>
+      <P_11A>107.96</P_11A>
+      <P_11Vat>8</P_11Vat>
+      <P_12>8</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>5</NrWierszaFa>
+      <UU_ID>51768852</UU_ID>
+      <P_7>Zimna woda</P_7>
+      <PKWiU>410020</PKWiU>
+      <P_8A>m3</P_8A>
+      <P_8B>12</P_8B>
+      <P_9A>5.48</P_9A>
+      <P_11>65.76</P_11>
+      <P_11A>71.02</P_11A>
+      <P_11Vat>5.26</P_11Vat>
+      <P_12>8</P_12>
+    </FaWiersz>
+    <Platnosc>
+      <TerminPlatnosci>
+        <Termin>2026-02-27</Termin>
+      </TerminPlatnosci>
+      <FormaPlatnosci>6</FormaPlatnosci>
+      <RachunekBankowy>
+        <NrRB>83103019447454100000225167</NrRB>
+        <NazwaBanku>Świadczenia</NazwaBanku>
+        <OpisRachunku>Citi H</OpisRachunku>
+      </RachunekBankowy>
+    </Platnosc>
+    <WarunkiTransakcji>
+      <Umowy>
+        <DataUmowy>2022-02-17</DataUmowy>
+        <NrUmowy>UMOWA NAJMU ZL-21/2022</NrUmowy>
+      </Umowy>
+    </WarunkiTransakcji>
+  </Fa>
+  <Stopka>
+    <Rejestry>
+      <PelnaNazwa>Miasto Stołeczne Warszawa</PelnaNazwa>
+      <REGON>015259640</REGON>
+    </Rejestry>
+  </Stopka>
+</Faktura>

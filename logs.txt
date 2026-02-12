@@ -1,42 +1,28 @@
-[2026-02-12T07:46:59.662Z] logowanie do Google
-[2026-02-12T07:46:59.664Z] zalogowane do Google
-[2026-02-12T07:46:59.664Z] startuję aplikację
-[2026-02-12T07:46:59.683Z] Serwer działa na porcie
-[2026-02-12T07:46:59.687Z] działa
-[2026-02-12T07:48:04.318Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:49:05.135Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:50:00.075Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:51:00.080Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:52:00.108Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:53:00.076Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:54:00.105Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:55:00.084Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:56:00.109Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:57:00.902Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:58:00.096Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T07:59:13.553Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:13:57.803Z] logowanie do Google
-[2026-02-12T08:13:57.805Z] zalogowane do Google
-[2026-02-12T08:13:57.805Z] startuję aplikację
-[2026-02-12T08:13:57.827Z] Serwer działa na porcie
-[2026-02-12T08:47:26.610Z] logowanie do Google
-[2026-02-12T08:47:26.611Z] zalogowane do Google
-[2026-02-12T08:47:26.611Z] startuję aplikację
-[2026-02-12T08:47:26.611Z] Uruchamiam aplikację...
-[2026-02-12T08:47:26.611Z] Ustawiam zadanie pobierania danych z KSeF na * 9 * * *...
-[2026-02-12T08:47:26.611Z] Ustawiam zadanie dodawania wydarzeń do kalendarza na 20 9 * * *...
-[2026-02-12T08:47:26.611Z] Uruchamiam zadanie pobierania danych z KSeF...
-[2026-02-12T08:47:26.630Z] Serwer działa na porcie
-[2026-02-12T08:47:26.636Z] działa
-[2026-02-12T08:48:00.095Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:49:00.157Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:50:00.084Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:51:00.152Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:52:00.074Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:53:00.069Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:54:00.097Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:55:00.089Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:56:00.178Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:57:00.080Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:58:00.084Z] Odpowiedź serwera KSeF: 200 OK
-[2026-02-12T08:59:00.140Z] Odpowiedź serwera KSeF: 200 OK
+[2026-02-12T09:13:23.292Z] logowanie do Google
+[2026-02-12T09:13:23.293Z] zalogowane do Google
+[2026-02-12T09:13:23.293Z] startuję aplikację
+[2026-02-12T09:13:23.294Z] Uruchamiam aplikację...
+[2026-02-12T09:13:23.294Z] Ustawiam zadanie pobierania danych z KSeF na 15 9 * * *...
+[2026-02-12T09:13:23.294Z] Ustawiam zadanie dodawania wydarzeń do kalendarza na 30 9 * * *...
+[2026-02-12T09:13:23.313Z] Serwer działa na porcie
+[2026-02-12T09:13:23.325Z] działa
+[2026-02-12T09:59:42.776Z] logowanie do Google
+[2026-02-12T09:59:42.789Z] zalogowane do Google
+[2026-02-12T09:59:42.789Z] startuję aplikację
+[2026-02-12T09:59:42.790Z] Uruchamiam aplikację...
+[2026-02-12T09:59:42.791Z] Ustawiam zadanie pobierania danych z KSeF na 00 11 * * *...
+[2026-02-12T09:59:42.792Z] Ustawiam zadanie dodawania wydarzeń do kalendarza na 05 11 * * *...
+[2026-02-12T09:59:42.904Z] Serwer działa na porcie
+[2026-02-12T10:00:00.202Z]  18 downloadMetada.js Odpowiedź serwera KSeF: 200 OK
+[2026-02-12T10:00:00.203Z] json() {
+          return consumeBody(this, parseJSONFromBytes, instance);
+        }
+[2026-02-12T10:05:00.036Z] zaczynam wporwadzać dane do klanedarza
+[2026-02-12T10:05:00.040Z] zakonczono aktualizacje kalendarza
+[2026-02-12T10:06:36.008Z] logowanie do Google
+[2026-02-12T10:06:36.015Z] zalogowane do Google
+[2026-02-12T10:06:36.016Z] startuję aplikację
+[2026-02-12T10:06:36.017Z] Uruchamiam aplikację...
+[2026-02-12T10:06:36.018Z] Ustawiam zadanie pobierania danych z KSeF na 10 11 * * *...
+[2026-02-12T10:06:36.018Z] Ustawiam zadanie dodawania wydarzeń do kalendarza na 20 11 * * *...
+[2026-02-12T10:06:36.023Z] Serwer działa na porcie

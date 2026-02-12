@@ -5,7 +5,7 @@ import refreshKsefToken from '../services/auth/refershToken.js';
 import readFileXml from '../operations/readFileXml.js';
 import cron from 'node-cron'
 import "dotenv/config";
-import { log } from 'node:console';
+import log from '../operations/saveAndLog.js';
 
 let accessTokenKsef;
 let refreshTokenKsef;

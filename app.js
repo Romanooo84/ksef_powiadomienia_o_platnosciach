@@ -38,8 +38,8 @@ const main = async () => {
   log("Uruchamiam aplikację...");
   
   
-  const delayKsefTime = '* 9 * * *'
-  const delayCallendarTime = '20 9 * * *'
+  const delayKsefTime = '10 11 * * *'
+  const delayCallendarTime = '20 11 * * *'
   
   log(`Ustawiam zadanie pobierania danych z KSeF na ${delayKsefTime}...`);
   log(`Ustawiam zadanie dodawania wydarzeń do kalendarza na ${delayCallendarTime}...`);

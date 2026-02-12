@@ -29,6 +29,11 @@
     "NazwaFirmy": "Inter Europol S.A.",
     "kwota": "-220.93"
   },
+  "930185875": {
+    "terminPlatnosci": "2026-02-18",
+    "NazwaFirmy": "Inter Europol S.A.",
+    "kwota": "-199.27"
+  },
   "2026014610000678": {
     "terminPlatnosci": null,
     "NazwaFirmy": "U.S. BANK EUROPE DAC (SP. Z O.O. O WYZNACZONYM PRZEDMIOCIE DZIALALNOSCI) ODDZIAL W POLSCE",
@@ -53,6 +58,11 @@
     "terminPlatnosci": "2026-02-27",
     "NazwaFirmy": "Miasto Stołeczne Warszawa",
     "kwota": "7154.05"
+  },
+  "00890/GN/BI/02/2026/FN/U": {
+    "terminPlatnosci": "2026-02-27",
+    "NazwaFirmy": "Miasto Stołeczne Warszawa",
+    "kwota": "2182.65"
   },
   "D/EM/35/02/26/21837": {
     "terminPlatnosci": "2026-02-21",
@@ -183,5 +193,15 @@
     "terminPlatnosci": "2026-03-03",
     "NazwaFirmy": "\"CARREFOUR POLSKA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
     "kwota": "1947.56"
+  },
+  "FRT-26-F-2607350": {
+    "terminPlatnosci": "2026-03-04",
+    "NazwaFirmy": "\"CARREFOUR POLSKA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kwota": "9329.73"
+  },
+  "FRT-26-F-2606981": {
+    "terminPlatnosci": "2026-03-04",
+    "NazwaFirmy": "\"CARREFOUR POLSKA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kwota": "7595.27"
   }
 }
